@@ -1,9 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 .poppins-regular {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
+}
+.inter-font {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 
 /* shared style */
@@ -26,6 +33,9 @@
     font-size: 0.889rem;
     font-weight: bold;
     margin-top: 16px;
+}
+body{
+    box-sizing: border-box;
 }
 /* header styles*/
 header {
@@ -69,7 +79,7 @@ header {
 }
 .banner-title{
     font-size: 2.89rem;
-    font-weight:bold ;
+    font-weight:bold;
 }
 /* .image{
     width: 105%;
@@ -81,10 +91,71 @@ header {
 }
 /* sponsors section styles */
 #sponsors{
-    max-width: 1110px;
+    max-width: 980px;
     margin: 69px auto 0;
     display: grid;
     grid-template-columns: repeat(7,1fr);
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
+    /* gap: 61px; */
+}
+/* collections section styles */
+#collections{
+    max-width: 1050px;
+    margin: 100px auto 0;
+}
+.section-title{
+    font-size: 1.56rem;
+    font-weight: 600;
+    color: #3A3A3A;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:25px;
+    margin-bottom: 50px;
+}
+.product-card{
+    height: 442px;
+    max-width: 300px;
+    box-shadow:0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+    padding: 17px 14px;
+    border-radius: 5px;
+}
+.product-name{
+    font-size: 1.556rem;
+    font-weight:500;
+    color: #18191F;
+    margin: 16px 0 6px;
+}
+.product-price{
+    font-size: 1.33rem;
+    color: rgba(0, 0, 0, 0.87);
+    margin: 6px 0 0;
+}
+.ratting{
+    display: inline;
+    font-size:1rem; 
+    font-family: roboto; 
+    font-weight: bold;
+    color: #5E6366;
+}
+.order-description{
+    font-size:1rem;
+    font-weight: bold;
+    color: #5E6366;
+    font-family: "Inter", sans-serif;
+    margin: 0px;
+    line-height: 143%;
+}
+.btn-see-more{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    text-decoration: none;
+    font-size: 0.89rem;
+    font-weight: bold;
+    color: #E02C6D;
 }
