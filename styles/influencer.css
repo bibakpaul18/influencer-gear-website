@@ -17,7 +17,8 @@
 .navbar,
 .nav-links,
 .banner,
-#feature {
+#feature,
+.social {
     display: flex;
 }
 
@@ -174,4 +175,35 @@ header {
 }
 #feature .feature-content .description{
     max-width: 450px;
+}
+/* footer styles */
+footer{
+    background-color:#0A0826;
+    color:white ;
+    padding: 50px 589px;
+    text-align: center;
+}
+.footer-title{
+    font-size: 1.33rem;
+    font-weight: bold;
+    margin-bottom:6px;
+}
+.footer-description{
+    margin-top: 6px;
+    font-size: 0.88rem;
+    line-height:24px;
+}
+.social{
+    justify-content: center;
+    gap:16px;
+}
+.social-icon {
+    width: 30px;
+    height: 30px;
+    background-color: rgba(255, 255, 255, 0.12);
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
